@@ -395,6 +395,32 @@ export class FullPage {
 		if (this.options.bullets && this.bulletsWrapper) {
 			this.bulletsWrapper.addEventListener('click', this.events.click);
 		}
+
+		// Клік по кнопці btn-next для переходу на наступну секцію ----
+		const firstBtn = document.querySelector('.first__btn');
+		const secondBtn = document.querySelector('.second__btn');
+		const secondNextBtn = document.querySelector('.second__next-btn');
+		const thirdBtn = document.querySelector('.third__btn');
+		if (firstBtn) {
+			firstBtn.addEventListener("click", () => {
+				this.switchingSection(1);
+			});
+		}
+		if(secondBtn) {
+			secondBtn.addEventListener("click", () => {
+				this.switchingSection(2);
+			});
+			secondNextBtn.addEventListener("click", () => {
+				this.switchingSection(2);
+			});
+		}
+		if(thirdBtn) {
+			thirdBtn.addEventListener("click", () => {
+				this.switchingSection(3);
+			});
+		}
+
+
 	}
 	removeEvents() {
 		this.wrapper.removeEventListener('wheel', this.events.wheel);
