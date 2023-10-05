@@ -368,7 +368,6 @@
 
     @media (any-hover: hover){
       &:hover{
-        transform: translateY(-15px);
         &::before {
           transform: translateY(-24%) rotate(180deg) scale(2);
         }
@@ -857,7 +856,7 @@
   justify-content: center;
   // .video__body
   &__body {
-    max-width: toRem(1300);
+    max-width: toRem(1100);
     background-color: white;
     border-radius: 90px;
     border: toRem(30) solid white;

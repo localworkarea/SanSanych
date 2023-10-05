@@ -977,7 +977,7 @@ h6 {
 }
 
 .video__body {
-  max-width: 81.25rem;
+  max-width: 68.75rem;
   background-color: white;
   border-radius: 90px;
   border: 1.875rem solid white;
@@ -2111,12 +2111,6 @@ h6 {
 @media (any-hover: hover) {
   .fp-bullets .fp-bullet:hover {
     opacity: 1;
-  }
-
-  .second__next-btn:hover {
-    -webkit-transform: translateY(-15px);
-        -ms-transform: translateY(-15px);
-            transform: translateY(-15px);
   }
 
   .second__next-btn:hover::before {
