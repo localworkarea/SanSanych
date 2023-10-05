@@ -310,6 +310,7 @@ h6 {
 
 .btn-next {
   position: absolute;
+  bottom: 1.875rem;
   left: 0;
   width: 100%;
   display: -webkit-box;
@@ -547,7 +548,7 @@ h6 {
 }
 
 .second__logo {
-  margin-top: 4rem;
+  margin-top: 2.125rem;
   -webkit-transition: all 0.5s cubic-bezier(0.39, 1.99, 0.38, 0.62);
   transition: all 0.5s cubic-bezier(0.39, 1.99, 0.38, 0.62);
   -webkit-transform: translateY(-200%);
@@ -573,6 +574,7 @@ h6 {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
+  bottom: 10rem;
 }
 
 .second__next-btn {
@@ -762,7 +764,7 @@ h6 {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  bottom: 12.5rem;
+  bottom: 7.5rem;
   padding: 1rem 1rem;
   width: 100%;
   max-width: 59.625rem;
@@ -793,7 +795,7 @@ h6 {
 .third__packs {
   position: absolute;
   z-index: 1;
-  bottom: -13%;
+  bottom: -23%;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
   -webkit-transition-delay: 1s;
@@ -1000,7 +1002,6 @@ h6 {
 .video__video {
   border-radius: 60px;
   border: 1.5625rem solid #2D5FE0;
-  background-color: #2D5FE0;
 }
 
 .icon-facebook {
@@ -1036,10 +1037,6 @@ h6 {
     width: 21.5rem;
   }
 
-  .second__next {
-    bottom: 14.375rem;
-  }
-
   .second__next-btn {
     padding-top: 0.875rem;
   }
@@ -1064,10 +1061,6 @@ h6 {
 }
 
 @media (min-width: 120em) {
-  .btn-next {
-    bottom: 3.9375rem;
-  }
-
   .btn-next__arrow {
     width: 5.5625rem;
   }
@@ -1081,15 +1074,15 @@ h6 {
   }
 
   .second__next-btn {
-    width: 32.4375rem;
+    width: 26.1875rem;
   }
 
   .second__next-btn {
-    height: 10.5rem;
+    height: 8.625rem;
   }
 
   .second__next-btn_txt {
-    font-size: 4.0625rem;
+    font-size: 3.125rem;
   }
 
   .speak__icon {
@@ -1109,11 +1102,11 @@ h6 {
   }
 
   .third__logo img {
-    width: 33.375rem;
+    width: 27.125rem;
   }
 
   .third__title {
-    font-size: 5.75rem;
+    font-size: 5rem;
   }
 
   .third__packs_left {
@@ -1126,10 +1119,6 @@ h6 {
 }
 
 @media (max-width: 90em) {
-  .btn-next {
-    bottom: 2.9375rem;
-  }
-
   .btn-next__arrow {
     width: 4.1875rem;
   }
@@ -1147,15 +1136,15 @@ h6 {
   }
 
   .second__next-btn {
-    width: 24.375rem;
+    width: 18.75rem;
   }
 
   .second__next-btn {
-    height: 7.875rem;
+    height: 6.25rem;
   }
 
   .second__next-btn_txt {
-    font-size: 3.0625rem;
+    font-size: 2.1875rem;
   }
 
   .speak__icon {
@@ -1175,7 +1164,7 @@ h6 {
   }
 
   .third__logo img {
-    width: 23.4375rem;
+    width: 18.75rem;
   }
 
   .third__title {
@@ -1270,7 +1259,7 @@ h6 {
   }
 
   .second__next {
-    bottom: 100px !important;
+    bottom: 6.25rem;
   }
 
   .speak {
@@ -1495,6 +1484,10 @@ h6 {
     margin-top: 1rem;
   }
 
+  .second__next {
+    bottom: 7.5rem;
+  }
+
   .fp-section-1 .speak {
     -webkit-transform: translateX(-50%) scale(1);
         -ms-transform: translateX(-50%) scale(1);
@@ -1561,10 +1554,6 @@ h6 {
 }
 
 @media (max-width: 22.5em) {
-  .btn-next {
-    bottom: 3.125rem;
-  }
-
   .btn-next__arrow {
     width: 4.0625rem;
   }
@@ -1587,10 +1576,6 @@ h6 {
 
   .second__logo img {
     width: 7.5rem;
-  }
-
-  .second__next {
-    bottom: 10.3125rem;
   }
 
   .second__next-btn {
@@ -1655,18 +1640,6 @@ h6 {
 }
 
 @media (min-width: 90em) and (max-width: 120em) {
-@supports (bottom: clamp( 2.9375rem , -0.0625rem  +  3.3333333333vw , 3.9375rem )) {
-    .btn-next {
-      bottom: clamp( 2.9375rem , -0.0625rem  +  3.3333333333vw , 3.9375rem );
-    }
-}
-
-@supports not (bottom: clamp( 2.9375rem , -0.0625rem  +  3.3333333333vw , 3.9375rem )) {
-    .btn-next {
-      bottom: calc(2.9375rem + 1 * (100vw - 90rem) / 30);
-    }
-}
-
 @supports (width: clamp( 4.1875rem , 0.0625rem  +  4.5833333333vw , 5.5625rem )) {
     .btn-next__arrow {
       width: clamp( 4.1875rem , 0.0625rem  +  4.5833333333vw , 5.5625rem );
@@ -1703,39 +1676,39 @@ h6 {
     }
 }
 
-@supports (width: clamp( 24.375rem , 0.1875rem  +  26.875vw , 32.4375rem )) {
+@supports (width: clamp( 18.75rem , -3.5625rem  +  24.7916666667vw , 26.1875rem )) {
     .second__next-btn {
-      width: clamp( 24.375rem , 0.1875rem  +  26.875vw , 32.4375rem );
+      width: clamp( 18.75rem , -3.5625rem  +  24.7916666667vw , 26.1875rem );
     }
 }
 
-@supports not (width: clamp( 24.375rem , 0.1875rem  +  26.875vw , 32.4375rem )) {
+@supports not (width: clamp( 18.75rem , -3.5625rem  +  24.7916666667vw , 26.1875rem )) {
     .second__next-btn {
-      width: calc(24.375rem + 8.0625 * (100vw - 90rem) / 30);
+      width: calc(18.75rem + 7.4375 * (100vw - 90rem) / 30);
     }
 }
 
-@supports (height: clamp( 7.875rem , 0.0000000625rem  +  8.75vw , 10.5rem )) {
+@supports (height: clamp( 6.25rem , -0.875rem  +  7.9166666667vw , 8.625rem )) {
     .second__next-btn {
-      height: clamp( 7.875rem , 0.0000000625rem  +  8.75vw , 10.5rem );
+      height: clamp( 6.25rem , -0.875rem  +  7.9166666667vw , 8.625rem );
     }
 }
 
-@supports not (height: clamp( 7.875rem , 0.0000000625rem  +  8.75vw , 10.5rem )) {
+@supports not (height: clamp( 6.25rem , -0.875rem  +  7.9166666667vw , 8.625rem )) {
     .second__next-btn {
-      height: calc(7.875rem + 2.625 * (100vw - 90rem) / 30);
+      height: calc(6.25rem + 2.375 * (100vw - 90rem) / 30);
     }
 }
 
-@supports (font-size: clamp( 3.0625rem , 0.0625rem  +  3.3333333333vw , 4.0625rem )) {
+@supports (font-size: clamp( 2.1875rem , -0.625rem  +  3.125vw , 3.125rem )) {
     .second__next-btn_txt {
-      font-size: clamp( 3.0625rem , 0.0625rem  +  3.3333333333vw , 4.0625rem );
+      font-size: clamp( 2.1875rem , -0.625rem  +  3.125vw , 3.125rem );
     }
 }
 
-@supports not (font-size: clamp( 3.0625rem , 0.0625rem  +  3.3333333333vw , 4.0625rem )) {
+@supports not (font-size: clamp( 2.1875rem , -0.625rem  +  3.125vw , 3.125rem )) {
     .second__next-btn_txt {
-      font-size: calc(3.0625rem + 1 * (100vw - 90rem) / 30);
+      font-size: calc(2.1875rem + 0.9375 * (100vw - 90rem) / 30);
     }
 }
 
@@ -1787,27 +1760,27 @@ h6 {
     }
 }
 
-@supports (width: clamp( 23.4375rem , -6.375rem  +  33.125vw , 33.375rem )) {
+@supports (width: clamp( 18.75rem , -6.375rem  +  27.9166666667vw , 27.125rem )) {
     .third__logo img {
-      width: clamp( 23.4375rem , -6.375rem  +  33.125vw , 33.375rem );
+      width: clamp( 18.75rem , -6.375rem  +  27.9166666667vw , 27.125rem );
     }
 }
 
-@supports not (width: clamp( 23.4375rem , -6.375rem  +  33.125vw , 33.375rem )) {
+@supports not (width: clamp( 18.75rem , -6.375rem  +  27.9166666667vw , 27.125rem )) {
     .third__logo img {
-      width: calc(23.4375rem + 9.9375 * (100vw - 90rem) / 30);
+      width: calc(18.75rem + 8.375 * (100vw - 90rem) / 30);
     }
 }
 
-@supports (font-size: clamp( 4.3125rem , 0.0000000625rem  +  4.7916666667vw , 5.75rem )) {
+@supports (font-size: clamp( 4.3125rem , 2.25rem  +  2.2916666667vw , 5rem )) {
     .third__title {
-      font-size: clamp( 4.3125rem , 0.0000000625rem  +  4.7916666667vw , 5.75rem );
+      font-size: clamp( 4.3125rem , 2.25rem  +  2.2916666667vw , 5rem );
     }
 }
 
-@supports not (font-size: clamp( 4.3125rem , 0.0000000625rem  +  4.7916666667vw , 5.75rem )) {
+@supports not (font-size: clamp( 4.3125rem , 2.25rem  +  2.2916666667vw , 5rem )) {
     .third__title {
-      font-size: calc(4.3125rem + 1.4375 * (100vw - 90rem) / 30);
+      font-size: calc(4.3125rem + 0.6875 * (100vw - 90rem) / 30);
     }
 }
 
@@ -1837,18 +1810,6 @@ h6 {
 }
 
 @media (min-width: 22.5em) and (max-width: 90em) {
-@supports (bottom: clamp( 2.9375rem , 3.1875rem  +  -0.2777777778vw , 3.125rem )) {
-    .btn-next {
-      bottom: clamp( 2.9375rem , 3.1875rem  +  -0.2777777778vw , 3.125rem );
-    }
-}
-
-@supports not (bottom: clamp( 2.9375rem , 3.1875rem  +  -0.2777777778vw , 3.125rem )) {
-    .btn-next {
-      bottom: calc(3.125rem + -0.1875 * (100vw - 22.5rem) / 67.5);
-    }
-}
-
 @supports (width: clamp( 4.0625rem , 4.0208333333rem  +  0.1851851852vw , 4.1875rem )) {
     .btn-next__arrow {
       width: clamp( 4.0625rem , 4.0208333333rem  +  0.1851851852vw , 4.1875rem );
@@ -1897,39 +1858,39 @@ h6 {
     }
 }
 
-@supports (width: clamp( 20rem , 18.5416666667rem  +  6.4814814815vw , 24.375rem )) {
+@supports (width: clamp( 18.75rem , 20.4166666667rem  +  -1.8518518519vw , 20rem )) {
     .second__next-btn {
-      width: clamp( 20rem , 18.5416666667rem  +  6.4814814815vw , 24.375rem );
+      width: clamp( 18.75rem , 20.4166666667rem  +  -1.8518518519vw , 20rem );
     }
 }
 
-@supports not (width: clamp( 20rem , 18.5416666667rem  +  6.4814814815vw , 24.375rem )) {
+@supports not (width: clamp( 18.75rem , 20.4166666667rem  +  -1.8518518519vw , 20rem )) {
     .second__next-btn {
-      width: calc(20rem + 4.375 * (100vw - 22.5rem) / 67.5);
+      width: calc(20rem + -1.25 * (100vw - 22.5rem) / 67.5);
     }
 }
 
-@supports (height: clamp( 6.5rem , 6.0416666667rem  +  2.037037037vw , 7.875rem )) {
+@supports (height: clamp( 6.25rem , 6.5833333333rem  +  -0.3703703704vw , 6.5rem )) {
     .second__next-btn {
-      height: clamp( 6.5rem , 6.0416666667rem  +  2.037037037vw , 7.875rem );
+      height: clamp( 6.25rem , 6.5833333333rem  +  -0.3703703704vw , 6.5rem );
     }
 }
 
-@supports not (height: clamp( 6.5rem , 6.0416666667rem  +  2.037037037vw , 7.875rem )) {
+@supports not (height: clamp( 6.25rem , 6.5833333333rem  +  -0.3703703704vw , 6.5rem )) {
     .second__next-btn {
-      height: calc(6.5rem + 1.375 * (100vw - 22.5rem) / 67.5);
+      height: calc(6.5rem + -0.25 * (100vw - 22.5rem) / 67.5);
     }
 }
 
-@supports (font-size: clamp( 2.25rem , 1.9791666667rem  +  1.2037037037vw , 3.0625rem )) {
+@supports (font-size: clamp( 2.1875rem , 2.2708333333rem  +  -0.0925925926vw , 2.25rem )) {
     .second__next-btn_txt {
-      font-size: clamp( 2.25rem , 1.9791666667rem  +  1.2037037037vw , 3.0625rem );
+      font-size: clamp( 2.1875rem , 2.2708333333rem  +  -0.0925925926vw , 2.25rem );
     }
 }
 
-@supports not (font-size: clamp( 2.25rem , 1.9791666667rem  +  1.2037037037vw , 3.0625rem )) {
+@supports not (font-size: clamp( 2.1875rem , 2.2708333333rem  +  -0.0925925926vw , 2.25rem )) {
     .second__next-btn_txt {
-      font-size: calc(2.25rem + 0.8125 * (100vw - 22.5rem) / 67.5);
+      font-size: calc(2.25rem + -0.0625 * (100vw - 22.5rem) / 67.5);
     }
 }
 
@@ -1981,15 +1942,15 @@ h6 {
     }
 }
 
-@supports (width: clamp( 18.125rem , 16.3541666667rem  +  7.8703703704vw , 23.4375rem )) {
+@supports (width: clamp( 18.125rem , 17.9166666667rem  +  0.9259259259vw , 18.75rem )) {
     .third__logo img {
-      width: clamp( 18.125rem , 16.3541666667rem  +  7.8703703704vw , 23.4375rem );
+      width: clamp( 18.125rem , 17.9166666667rem  +  0.9259259259vw , 18.75rem );
     }
 }
 
-@supports not (width: clamp( 18.125rem , 16.3541666667rem  +  7.8703703704vw , 23.4375rem )) {
+@supports not (width: clamp( 18.125rem , 17.9166666667rem  +  0.9259259259vw , 18.75rem )) {
     .third__logo img {
-      width: calc(18.125rem + 5.3125 * (100vw - 22.5rem) / 67.5);
+      width: calc(18.125rem + 0.625 * (100vw - 22.5rem) / 67.5);
     }
 }
 
@@ -2052,18 +2013,6 @@ h6 {
 @supports not (width: clamp( 7.5rem , 3.9255319149rem  +  15.8865248227vw , 21.5rem )) {
     .second__logo img {
       width: calc(7.5rem + 14 * (100vw - 22.5rem) / 88.125);
-    }
-}
-
-@supports (bottom: clamp( 10.3125rem , 9.2752659574rem  +  4.609929078vw , 14.375rem )) {
-    .second__next {
-      bottom: clamp( 10.3125rem , 9.2752659574rem  +  4.609929078vw , 14.375rem );
-    }
-}
-
-@supports not (bottom: clamp( 10.3125rem , 9.2752659574rem  +  4.609929078vw , 14.375rem )) {
-    .second__next {
-      bottom: calc(10.3125rem + 4.0625 * (100vw - 22.5rem) / 88.125);
     }
 }
 
@@ -2132,7 +2081,7 @@ h6 {
 
 @media (min-width: 75.06125em) and (max-width: 93.81125em) and (min-height: 40.68625em) and (max-height: 50.06125em) {
   .second__next {
-    bottom: 160px !important;
+    bottom: 7.5rem;
   }
 
   .speak {
@@ -2142,7 +2091,7 @@ h6 {
 
 @media (max-width: 81.31125em) and (min-width: 48.06125em) and (max-height: 37.56125em) {
   .third__logo img {
-    width: 17.1875rem !important;
+    width: 15.625rem !important;
   }
 }
 
@@ -2189,7 +2138,7 @@ h6 {
 
 @media (max-height: 28.75em) {
   .btn-next {
-    bottom: 1.25rem !important;
+    bottom: 1.25rem;
   }
 
   .first__logo {

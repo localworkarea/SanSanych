@@ -28,8 +28,9 @@
 
 .btn-next {
   position: absolute;
-  @include adaptiveValue("bottom", 63, 47,0,1920,1440);
-  @include adaptiveValue("bottom", 47, 50,3,1440,360);
+  // @include adaptiveValue("bottom", 63, 47,0,1920,1440);
+  // @include adaptiveValue("bottom", 47, 50,3,1440,360);
+  bottom: toRem(30);
   left: 0;
   width: 100%;
   display: flex;
@@ -40,7 +41,7 @@
   opacity: 0;
 
   @media (max-height: em(460)){
-    bottom: toRem(20) !important;
+    bottom: toRem(20);
   }
   // .btn-next__arrow
   &__arrow {
@@ -294,7 +295,7 @@
   }
   // .second__logo
   &__logo {
-    margin-top: toRem(64);
+    margin-top: toRem(34);
 
     transition: all .5s cubic-bezier(.39,1.99,.38,.62);
     transform: translateY(-200%);
@@ -323,20 +324,23 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    @include adaptiveValue("bottom", 230, 165);
+    bottom: toRem(160);
     @media (max-width: em(900.98)) and (max-height: em(450.98)) {
-      bottom: 100px !important;
+      bottom: toRem(100);
     }
     @media (min-width: em(1200.98)) and (max-width: em(1500.98)) and (min-height: em(650.98)) and (max-height: em(800.98)) {
-        bottom: 160px !important;
+      bottom: toRem(120);
+    }
+    @media (max-width:$mobileSmall){
+       bottom: toRem(120); 
     }
   }
   // .second__next-btn
   &__next-btn {
-    @include adaptiveValue("width", 519, 390,0,1920,1440);
-    @include adaptiveValue("width", 390, 320,3,1440,360);
-    @include adaptiveValue("height", 168, 126,0,1920,1440);
-    @include adaptiveValue("height", 126, 104,3,1440,360);
+    @include adaptiveValue("width", 419, 300,0,1920,1440);
+    @include adaptiveValue("width", 300, 320,3,1440,360);
+    @include adaptiveValue("height", 138, 100,0,1920,1440);
+    @include adaptiveValue("height", 100, 104,3,1440,360);
 
     @include adaptiveValue("padding-top", 14, 9);
     @include adaptiveValue("padding-bottom", 14, 9);
@@ -408,8 +412,8 @@
       display: block;
       width: 100%;
       text-align: center;
-      @include adaptiveValue("font-size", 65, 49,0,1920,1440);
-      @include adaptiveValue("font-size", 49, 36,3,1440,360);
+      @include adaptiveValue("font-size", 50, 35,0,1920,1440);
+      @include adaptiveValue("font-size", 35, 36,3,1440,360);
 		}
   }
   // .second__button
@@ -560,7 +564,6 @@
   // .third__logo
   &__logo {
     margin-top: toRem(24);
-
     
     transition: all .5s cubic-bezier(.39,1.99,.38,.62);
     transform: translateY(-200%);
@@ -580,11 +583,11 @@
        margin-top: toRem(163); 
     }
     img {
-      @include adaptiveValue("width", 534, 375,0,1920,1440);
-      @include adaptiveValue("width", 375, 290,3,1440,360);
+      @include adaptiveValue("width", 434, 300,0,1920,1440);
+      @include adaptiveValue("width", 300, 290,3,1440,360);
       height: auto;
       @media (max-width: em(1300.98)) and (min-width: em(768.98)) and (max-height: em(600.98)) {
-        width: toRem(275) !important;
+        width: toRem(250) !important;
       }
     }
   }
@@ -593,13 +596,13 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: toRem(200);
+    bottom: toRem(120);
     padding: toRem(16) toRem(16);
 
     width: 100%;
     max-width: toRem(954);
     line-height: 0.93;
-    @include adaptiveValue("font-size", 92, 69,0,1920,1440);
+    @include adaptiveValue("font-size", 80, 69,0,1920,1440);
     @include adaptiveValue("font-size", 69, 40,3,1440,360);
 
     span {
@@ -638,7 +641,7 @@
   &__packs {
     position: absolute;
     z-index: 1;
-    bottom: -13%;
+    bottom: -23%;
     transition: all .6s ease;
     transition-delay: 1s;
     @media (max-width: em(1440.98)){
@@ -898,7 +901,7 @@
   &__video {
     border-radius: 60px;
     border: toRem(25) solid #2D5FE0;
-    background-color: #2D5FE0;
+    // background-color: #2D5FE0;
     @media (max-width: em(1440.98)){
       border: toRem(19) solid #2D5FE0;
     }
